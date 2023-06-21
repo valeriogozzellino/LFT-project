@@ -1,0 +1,11 @@
+/* comment **/
+read[x,y];
+while (> x 0)
+	conditional [
+		option (> x y) do {assign - x 2 to x; print[x]}
+		option (== x y) do {assign 0 to x; print[x]}
+	]
+	else {assign - x 1 to x; print[x]}
+	end;
+assign 10 to a,b;
+print[a,*(+(b,1),10,5)]
